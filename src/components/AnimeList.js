@@ -17,7 +17,7 @@ const AnimeList = () => {
     return (
 
         <div className="wrapper">
-            <div className="header">Animag</div>
+            <div className="header">Kimolaki</div>
             <div className="row">
                 {data.map(({title, description, url, urlToImage}) => (   //destructured style
                     <AnimeItem title={title} 

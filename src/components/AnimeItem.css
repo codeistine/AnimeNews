@@ -33,6 +33,7 @@ body {
     width: 100%;
     object-fit: cover;
 }
+
 h3  {
     font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
@@ -54,6 +55,12 @@ p {
     font-weight: 400;
 }
 
+@media all and (max-width: 1023px) and (min-width: 768px) {
+    .col {
+        width: calc(83% / 2);
+    }
+}
+
 @media all and (max-width: 767px) {
     .wrapper {
         padding: 0 20px;
@@ -64,5 +71,9 @@ p {
     .col {
         width: 100%;
         padding: 0;
+        margin: 40px 0;
+    }
+    .content {
+        padding: 20px;
     }
 }
