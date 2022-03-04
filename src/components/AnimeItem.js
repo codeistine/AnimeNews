@@ -2,13 +2,15 @@ import React from "react";
 import './AnimeItem.css'
 
 
-const AnimeItem = ({title, description, url, urlToImage}) => {
+const AnimeItem = ({title, description, url, urlToImage,publishedAt,author }) => {
     return (
         <div className="col">
             <img className="img" src={urlToImage} alt="Image" />
+            <p className="post-date">{publishedAt}</p>
             <div className="content">
                 <h3> <a href={url}>{title}</a></h3>
                 <p>{description}</p>
+                <h4 className="post-author">{author}</h4>
             </div>
         </div>
     )

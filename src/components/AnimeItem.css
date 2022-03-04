@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap');
 body {
     box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
 }
 .wrapper {
     max-width: 1440px;
@@ -50,9 +51,12 @@ h3 a:hover {
     color: blue;
 }
 p {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
+}
+p.post-date {
+    font-size: 1rem;
+    padding-top: 1rem;
 }
 
 @media all and (max-width: 1023px) and (min-width: 768px) {
