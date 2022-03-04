@@ -11,9 +11,6 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 }
-.header {
-    position: fixed;
-}
 .row {
     display: flex;
     flex-direction: row;
@@ -29,7 +26,7 @@ body {
     border-radius: 1rem;
 }
 .col img {
-    max-height: 178px;
+    /* max-height: 178px; */
     max-width: 100%;
     width: 100%;
     object-fit: cover;
@@ -101,13 +98,13 @@ p {
         width: calc(80% / 3);
     }
 }
-@media all and (max-width: 1023px) and (min-width: 768px) {
+@media all and (max-width: 1023px) and (min-width: 993px) {
     .col {
         width: calc(83% / 2);
     }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 992px) {
     .wrapper {
         padding: 0 20px;
     }

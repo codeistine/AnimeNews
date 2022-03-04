@@ -1,0 +1,13 @@
+.header {
+    font-family: "Pokemon";
+    font-size: 40px;
+    letter-spacing: 7px;
+    z-index: 9999;
+    margin-top: 0;
+    padding: 0;
+    top: -1px;
+    width: 100%;
+    text-align: center;
+    background-color: #ddfff7;
+}
+
