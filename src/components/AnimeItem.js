@@ -4,6 +4,8 @@ import './AnimeItem.css'
 
 const AnimeItem = ({title, description, url, urlToImage,publishedAt,author }) => {
     return (
+        <>
+     
         <div className="col">
             <div className="img"><img src={urlToImage} alt="Image" /></div>
             <div className="content">
@@ -13,7 +15,9 @@ const AnimeItem = ({title, description, url, urlToImage,publishedAt,author }) =>
                 <h4 className="post-author">{author}</h4>
             </div>
         </div>
+        </>
     )
+
 }
 
 export default AnimeItem;

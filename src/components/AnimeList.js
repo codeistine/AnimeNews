@@ -10,7 +10,7 @@ const AnimeList = () => {
 
     useEffect(()=> {
         const getData = async () => {
-            const res = await Axios.get("https://newsapi.org/v2/everything?q=anime&language=en&apiKey=3a3dbe8e8be5419bb4aa241a1c4a0c3c");
+            const res = await Axios.get("https://newsapi.org/v2/everything?q=anime&language=en&apiKey=49e230d0644042ea89e462e4d24e7fe6");
             setData(res.data.articles);
             console.log(res);
         };
@@ -20,6 +20,7 @@ const AnimeList = () => {
     return (
         <>
         <Header />
+        
         <div className="wrapper">
             <div className="row">
                 {data.map(({title, description, url, urlToImage,publishedAt,author}) => (   //destructured style
@@ -32,6 +33,7 @@ const AnimeList = () => {
                     />
                 ))}
             </div>
+           
         </div>
         <Footer />
         </>

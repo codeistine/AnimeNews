@@ -1,13 +1,31 @@
-.header {
+.navbar{
+    width: 100%;
+    min-height: 6vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    transition: all .7s ease-in;
     font-family: "Pokemon";
-    font-size: 40px;
+    font-size: 22px;
     letter-spacing: 7px;
     z-index: 9999;
-    margin-top: 0;
+    margin: 0 0 40px;
     padding: 0;
-    top: -1px;
     width: 100%;
     text-align: center;
     background-color: #ddfff7;
+    transition: .5s background;
+    padding: 0 40px;
 }
 
+header.navbar.scrolled{
+    position: fixed;
+    transition: .5s background;
+    background-color: #ddfff7;
+ 
+}
+.logo img{
+    width: 50px;
+}
