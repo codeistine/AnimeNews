@@ -1,7 +1,19 @@
-import React,{useEffect} from 'react';
+import React,{ useState, useEffect } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme, GlobalStyles } from './Theme'
 import './Header.css';
 
-const Navbar=() => {
+const StyledApp = styled.div `
+  // color: ${props => props.theme.fontColor};
+`
+
+const Header=() => {
+  const [theme, setTheme] = useState("light");
+
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
   const [scrolled,setScrolled]=React.useState(false);
   const handleScroll=() => {
       const offset=window.scrollY;
@@ -23,15 +35,28 @@ const Navbar=() => {
     }
     
     return (
+      
+      <>
       <header className={navbarClasses.join(" ")}>
           <div className="logo">
               Kimolaki
           </div>
           <nav className="navigation">
-           
+  
           </nav>
 
+          <ThemeProvider theme={ theme === 'light' ? lightTheme : darkTheme}>
+          <StyledApp>
+            <button onClick={() => themeToggler()}>Change Theme</button>
+          </StyledApp>
+      <GlobalStyles />
+   
+      </ThemeProvider>
+
       </header>
+      </>
     )
-};
-export default Navbar;
+  
+
+}
+export default Header;
