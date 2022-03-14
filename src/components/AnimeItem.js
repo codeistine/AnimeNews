@@ -5,7 +5,6 @@ import './AnimeItem.css'
 const AnimeItem = ({title, description, url, urlToImage,publishedAt,author }) => {
     return (
         <>
-     
         <div className="col">
             <div className="img"><img src={urlToImage} alt="Image" /></div>
             <div className="content">

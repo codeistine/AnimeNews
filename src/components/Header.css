@@ -29,3 +29,17 @@ header.navbar.scrolled{
 .logo img{
     width: 50px;
 }
+button {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 30px;
+    outline: none;
+}
+.sc-bdvvtL.cAOKLl button {
+    background-image: url("/src/assets/image/sun.png");
+}
+.sc-bdvvtL.fGsHOP button {
+    background-image: url("/src/assets/image/moon.png");
+}
