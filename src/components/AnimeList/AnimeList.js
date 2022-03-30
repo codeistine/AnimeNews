@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
-import AnimeItem from "./AnimeItem";
-import Header from "./Header";
-import Footer from "./Footer";
-
+import AnimeItem from "../AnimeItem/AnimeItem";
 
 const AnimeList = () => {
     const [data, setData] = useState([]);
@@ -17,11 +14,10 @@ const AnimeList = () => {
         getData();
     }, []);
     
+    
     return (
         <>
-        <Header />
-        
-        <div className="wrapper">
+        <div className="content wrapper">
             <div className="row">
                 {data.map(({title, description, url, urlToImage,publishedAt,author}) => (   //destructured style
                     <AnimeItem title={title} 
@@ -35,7 +31,6 @@ const AnimeList = () => {
             </div>
            
         </div>
-        <Footer />
         </>
     )
 }
