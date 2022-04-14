@@ -13,5 +13,5 @@ code {
 }
 @font-face {
   font-family: "Pokemon";
-  src: local("Pokemon"), url(./fonts/PokemonSolidNormal-xyWR.ttf) format('truetype');
+  src: local("Pokemon"), url(../src/assets/fonts/PokemonSolidNormal-xyWR.ttf) format('truetype');
 }
